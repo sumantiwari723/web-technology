@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dynamic content</title>
+</head>
+<body>
+<a id="link1" href="javascript:display('show', 1)">Show</a>
+
+<div id="coffee1" style="display:none">
+	<img src="coffee1.jpg" height="400" width="600">
+</div>
+
+<script type="text/javascript">
+	function display(action, id)
+{
+if (action == 'show')
+{
+document.getElementById("coffee"+id).style.display = "block";
+document.getElementById("link"+id).href= "javascript:display('hide', "+id+")";
+document.getElementById("link"+id).innerHTML = "Hide";
+}
+
+if (action == 'hide')
+{
+document.getElementById("coffee"+id).style.display = "none";
+document.getElementById("link"+id).href= "javascript:display('show', "+id+")";
+document.getElementById("link"+id).innerHTML = "Show";
+}
+}
+</script>
+</body>
+</html>
