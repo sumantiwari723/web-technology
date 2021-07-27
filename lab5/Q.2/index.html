@@ -1,0 +1,41 @@
+<html>
+<head>
+  <title>Positioning and Stacking</title>
+  <style>
+    #img1 {
+      position: relative;
+      top: 0px;
+      left: 0px;
+    }
+
+    #img2 {
+      position: relative;
+      top: 26px;
+      left: -100px;
+    }
+  </style>
+</head>
+
+<body>
+  <img src="coffee1.jpg" id="img1" height="200" width="400">
+  <img src="coffee2.jpg" id="img2" height="200" width="400">
+
+  <script>
+    var img1 = document.getElementById('img1');
+    var img2 = document.getElementById('img2');
+   
+    img1.addEventListener('click', function (ev) {
+      img1.style.zIndex = 1;
+      img2.style.zIndex = 0;
+    });
+
+    img2.addEventListener('click', function (ev) {
+      img2.style.zIndex = 1;
+      img1.style.zIndex = 0;
+    });
+    
+
+  </script>
+</body>
+
+</html>
