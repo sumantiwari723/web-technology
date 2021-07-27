@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>alter visibility</title>
+</head>
+<body>
+<img src="coffee1.jpg" height="500" width="800" id="image"><br>
+<input type="button" value="hide" onclick="hide()">
+<input type="button" value="show" onclick="show()">
+<script type="text/javascript">
+	function hide(){
+		document.getElementById("image").style.display = "none";
+	}
+
+	function show(){
+		document.getElementById("image").style.display = "block";
+	}
+</script>
+</body>
+</html>
