@@ -1,0 +1,29 @@
+<html>
+<body>
+  <h2>Validation Form</h2>
+
+  <p>Enter a number between 0 and 10:</p>
+
+  <input id="num">
+
+  <button type="button" onclick="validate_form()">Submit</button>
+
+  <p id="new"></p>
+
+<script>
+  function validate_form() {
+    var x, display;
+
+    x = document.getElementById("num").value;
+
+    if (isNaN(x) || x < 0 || x > 10) {
+      display = "Not valid";
+    } else {
+      display = "Valid";
+    }
+    document.getElementById("new").innerHTML = display;
+  }
+</script>
+
+</body>
+</html>
