@@ -7,10 +7,10 @@ $gces->name = "Gandaki College Of Engineering And Science";
 $gces->address = "Lamachaur";
 
 
-array_push($gces->employees, new Employee("Nishal", "MustangChowk"));
-array_push($gces->employees, new Employee("Abhishek", "Pokhara"));
-array_push($gces->employees, new Employee("Bandana", "Lekhnath"));
-array_push($gces->employees, new Employee("Ram", "Mustang"));
+array_push($gces->employees, new Employee("suman", "MustangChowk"));
+array_push($gces->employees, new Employee("pramod", "Pokhara"));
+array_push($gces->employees, new Employee("santosh", "Lekhnath"));
+array_push($gces->employees, new Employee("krishna", "Mustang"));
 
 //<?= $gces->name ?>
  
